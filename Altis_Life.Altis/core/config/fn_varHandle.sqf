@@ -15,7 +15,29 @@ switch (_mode) do
 	case 0:
 	{
 		switch (_var) do
-		{
+		{	
+			//new
+			case "lwatch": {"life_inv_lwatch"};
+			case "woodleg": {"life_inv_woodleg"};
+			case "shoki": {"life_inv_shoki"};
+			case "luckycookie": {"life_inv_luckycookie"};
+			case "lighter": {"life_inv_lighter"};
+			case "robo1": {"life_inv_robo1"};
+			case "robo2": {"life_inv_robo2"};
+			case "robo3": {"life_inv_robo3"};
+			case "robo4": {"life_inv_robo4"};
+			case "robo5": {"life_inv_robo5"};
+			case "robo6": {"life_inv_robo6"};
+			case "robo": {"life_inv_robo"};
+			case "bppickaxet": {"life_inv_bppickaxet"};
+			case "bpaxet": {"life_inv_bpaxet"};
+			case "cables": {"life_inv_cables"};
+			case "tnt": {"life_inv_tnt"};
+			case "dinobone": {"life_inv_dinobone"};
+			case "pickaxet": {"life_inv_pickaxet"};
+			case "axet": {"life_inv_axet"};
+			case "calc": {"life_inv_calc"};
+			
 			case "oilu": {"life_inv_oilu"};
 			case "oilp": {"life_inv_oilp"};
 			case "heroinu": {"life_inv_heroinu"};
@@ -98,6 +120,28 @@ switch (_mode) do
 	{
 		switch (_var) do
 		{
+			//new
+			case "life_inv_lwatch": {"lwatch"};
+			case "life_inv_woodleg": {"woodleg"};
+			case "life_inv_shoki": {"shoki"};
+			case "life_inv_luckycookie": {"luckycookie"};
+			case "life_inv_lighter": {"lighter"};
+			case "life_inv_robo1": {"robo1"};
+			case "life_inv_robo2": {"robo2"};
+			case "life_inv_robo3": {"robo3"};
+			case "life_inv_robo4": {"robo4"};
+			case "life_inv_robo5": {"robo5"};
+			case "life_inv_robo6": {"robo6"};
+			case "life_inv_robo": {"robo"};
+			case "life_inv_bppickaxet": {"bppickaxet"};
+			case "life_inv_bpaxet": {"bpaxet"};
+			case "life_inv_cables": {"cables"};
+			case "life_inv_tnt": {"tnt"};
+			case "life_inv_dinobone": {"dinobone"};
+			case "life_inv_pickaxet": {"pickaxet"};
+			case "life_inv_axet": {"axet"};
+			case "life_inv_calc": {"calc"};
+			
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
 			case "life_inv_heroinu": {"heroinu"};

@@ -10,7 +10,7 @@ _shop = _this select 0;
 
 switch (_shop) do
 {
-	case "market": {["Altis Market",["water","rabbit","apple","Birnen","redgull","tbacon","lockpick","pickaxe","axe","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
+	case "market": {["Altis Market",["shoki","water","rabbit","apple","Birnen","redgull","tbacon","lockpick","pickaxe","axe","fuelF","peach","boltcutter","storagesmall","storagebig","shoki"]]};
 	case "rebel": {["Rebel Market",["Kabelbinder","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
@@ -34,4 +34,5 @@ switch (_shop) do
 	case "adac": {["ADAC Markt", ["fuelF","water","redgull","rabbit","apple","tbacon","peach"], ["adac"]]};
 	case "taxi": {["Taxi Markt", ["fuelF","water","redgull","rabbit","apple","tbacon","peach"], ["taxi"]]};
 	case "saft": {["Getränke Markt", ["traup","flaschp"], ["saft"]]};
+	case "ramsch": {["Ramschladen", ["lwatch","woodleg","luckycookie","robo1","robo2","robo3","robo4","robo5","robo6","robo","bppickaxet","bpaxet","cables","dinobone"]]};
 };

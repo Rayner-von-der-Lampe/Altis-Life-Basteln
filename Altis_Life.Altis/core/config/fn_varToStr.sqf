@@ -13,6 +13,29 @@ if(_var == "") exitWith {""};
 switch (_var) do
 {
 	//Virtual Inventory Items
+	case "life_inv_lwatch": {"Wecker"};
+	case "life_inv_calc": {"Taschenrechner"};
+	case "life_inv_woodleg": {"Holzbein"};
+	case "life_inv_shoki": {"Schokoriegel"};
+	case "life_inv_luckycookie": {"Glückskeks"};
+	case "life_inv_lighter": {"Feuerzeug"};
+	case "life_inv_robo1": {"Kopf eines Roboterspielzeugs"};
+	case "life_inv_robo2": {"Rechter Arm eines Roboterspielzeugs"};
+	case "life_inv_robo3": {"Linker Arm eines Roboterspielzeugs"};
+	case "life_inv_robo4": {"Torso eines Roboterspielzeugs"};
+	case "life_inv_robo5": {"Rechtes Bein eines Roboterspielzeugs"};
+	case "life_inv_robo6": {"Linkes Bein eines Roboterspielzeugs"};
+	case "life_inv_robo": {"Roboterspielzeug"};
+	case "life_inv_bppickaxet": {"Bauplan Spitzhacke MK II"};
+	case "life_inv_bpaxet": {"Bauplan Axt MK II"};
+	case "life_inv_cables": {"Kabel"};
+	case "life_inv_tnt": {"TNT"};
+	case "life_inv_dinobone": {"dinobone"};
+	case "life_inv_pickaxet": {"pickaxet"};
+	case "life_inv_axet": {"axet"};
+	
+	
+	
 	case "life_inv_oilu": {"Rohoel"};
 	case "life_inv_oilp": {"Oel"};
 	case "life_inv_heroinu": {"Unreines Heroin"};

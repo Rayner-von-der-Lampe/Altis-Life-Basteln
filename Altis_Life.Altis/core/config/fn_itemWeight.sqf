@@ -10,7 +10,29 @@ _item = [_this,0,"",[""]] call BIS_fnc_param;
 if(_item == "") exitWith {};
 
 switch (_item) do
-{
+{	//New
+	case "lwatch": {1};
+	case "woodleg": {3};
+	case "shoki": {1};
+	case "luckycookie": {1};
+	case "lighter": {1};
+	case "robo1": {1};
+	case "robo2": {1};
+	case "robo3": {1};
+	case "robo4": {1};
+	case "robo5": {1};
+	case "robo6": {1};
+	case "robo": {7};
+	case "bppickaxet": {1};
+	case "bpaxet": {1};
+	case "cables": {1};
+	case "tnt": {3};
+	case "dinobone": {7};
+	case "calc": {1};
+	
+	case "pickaxet": {2};
+	case "axet": {2};
+	//
 	case "oilu": {7};
 	case "oilp": {6};
 	case "heroinu": {6};
@@ -124,22 +146,9 @@ switch (_item) do
 	// case "pc": {5};
 	// case "tv": {7};
 	// case "smartphones": {2};
-	// case "pickaxet": {2};
-	// case "axet": {2};
 	// case "shovelt": {2};
-	// case "titan": {7};
-	// case "titanore": {5};
-	// case "mg": {8};
-	// case "mgore": {5};
-	// case "silverore": {5};
-	// case "silver": {12};
+
 	
-	// case "ringti": {2};
-	// case "ringtis": {2};
-	// case "ringtir": {2};
-	// case "ringtid": {2};
-	// case "ringtism": {2};
-		
 	
 	default {1};
 };

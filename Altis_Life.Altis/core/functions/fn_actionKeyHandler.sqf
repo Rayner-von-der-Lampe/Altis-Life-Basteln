@@ -21,13 +21,13 @@ if(isNull _curTarget) exitWith {
 		};
 	} else {
 		_random = random(1000);
-		if(_random >= 900 && _random <= 1000) then
+		if(_random >= 800 && _random <= 1000) then
 		{	// Spacial o.O^^
 			if(playerSide == civilian) then {
 			[] call life_fnc_gather2;
 			};
 		}
-		if(_random >= 700 && _random <= 899) then
+		if(_random >= 700 && _random <= 799) then
 		{	// Spacial o.O^^
 			if(playerSide == civilian) then {
 			[] call life_fnc_gather3;

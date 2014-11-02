@@ -121,7 +121,32 @@ life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
-[
+[	//NEW uniques<
+	//lvl 1
+	"life_inv_lwatch",
+	"life_inv_woodleg",
+	"life_inv_shoki",
+	"life_inv_luckycookie",
+	"life_inv_lighter",
+	"life_inv_calc",
+	//lvl 2
+	"life_inv_robo1",		//robofigur zusammensetzbar
+	"life_inv_robo2",		//
+	"life_inv_robo3",		//
+	"life_inv_robo4",		//
+	"life_inv_robo5",		//
+	"life_inv_robo6",		//
+	"life_inv_robo",		// robofigur
+	"life_inv_bppickaxet",
+	"life_inv_bpaxet",
+	"life_inv_cables",
+	"life_inv_tnt",
+	"life_inv_dinobone",
+	//new items
+	"life_inv_pickaxet",
+	"life_inv_axet",
+	
+	//NEW uniques>
 	"life_inv_oilu",
 	"life_inv_oilp",
 	"life_inv_heroinu",
