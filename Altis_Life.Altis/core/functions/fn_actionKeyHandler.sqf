@@ -13,19 +13,32 @@ if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
 if(isNull _curTarget) exitWith {
-	if(_isWater) then {
+		if(_isWater) then {
 		private["_fish"];
 		_fish = (nearestObjects[getPos player,["Fish_Base_F"],3]) select 0;
 		if(!isNil "_fish") then {
 			[_fish] call life_fnc_catchFish;
 		};
 	} else {
-		if(playerSide == civilian && !license_civ_skill) then {
-			[] call life_fnc_gather;
-		};
-		if(playerSide == civilian && license_civ_skill) then {
+		_random = random(1000);
+		if(_random >= 900 && _random <= 1000) then
+		{	// Spacial o.O^^
+			if(playerSide == civilian) then {
 			[] call life_fnc_gather2;
-		};
+			};
+		}
+		if(_random >= 700 && _random <= 899) then
+		{	// Spacial o.O^^
+			if(playerSide == civilian) then {
+			[] call life_fnc_gather3;
+			};
+		}
+			else
+		{	//Normal
+			if(playerSide == civilian) then {
+			[] call life_fnc_gather;
+			};		
+		};		
 		if(playerSide == civilian && life_inv_pickaxe > 0) then {
 			if(([false,"pickaxe",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
 			[true,"pickaxe",1] call life_fnc_handleInv;
@@ -38,12 +51,7 @@ if(isNull _curTarget) exitWith {
 			[] spawn life_fnc_AxeUse;
 			};
 		};
-/* 		if(playerSide == civilian && life_inv_shovel > 0) then {
-			 if(([false,"shovel",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
-			 [true,"shovel",1] call life_fnc_handleInv;
-			 [] spawn life_fnc_shovelUse;
-			 };
-		};
+/* 		
 		if(playerSide == civilian && life_inv_pickaxet > 0) then {
 			if(([false,"pickaxet",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
 			[true,"pickaxet",1] call life_fnc_handleInv;
