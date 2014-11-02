@@ -294,14 +294,25 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["weapons",3250],["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500],["Kabelbinder",500],["turtle",3000],["lockpick",5000],["speedtrap",5000],["handcuffs",500],["spikeStrip",2500],["pole",750],["bark",50],["licht",50],["laptop",500],["methu",2800],["methp",3500],["lsdu",2800],["lsdp",4500]];
+life_illegal_items = [["tnt",3250],["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500],["Kabelbinder",500],["turtle",3000],["lockpick",5000],["speedtrap",5000],["handcuffs",500],["spikeStrip",2500],["pole",750],["bark",50],["licht",50],["laptop",500],["methu",2800],["methp",3500],["lsdu",2800],["lsdp",4500]];
 
 
 /*
 	Sell / buy arrays
 */
 sell_array = 
-[
+[	
+	["lwatch",29],
+	["cables",30],
+	["woodleg",49],
+	["shoki",13],
+	["luckycookie",1],
+	["calc",30],
+	["robo",2000000],
+	["bppickaxet",30000],
+	["bpaxet",300000],
+	["dinobone",70000],
+	
 	["apple",50],
 	["Birnen",65],
 	["heroinu",1850],
@@ -366,6 +377,7 @@ __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
+	
 	["apple",65],
 	["rabbit",75],
 	["salema",55],
