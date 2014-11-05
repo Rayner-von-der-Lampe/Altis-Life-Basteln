@@ -28,7 +28,7 @@ if(isNull _curTarget) exitWith {
 			[] call life_fnc_gather2;
 		};
 		if(playerSide == civilian && _random <= 699 then {
-			[] call life_fnc_gather2;
+			[] call life_fnc_gather;
 		};
 		if(playerSide == civilian && life_inv_pickaxe > 0) then {
 			if(([false,"pickaxe",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
@@ -42,30 +42,6 @@ if(isNull _curTarget) exitWith {
 			[] spawn life_fnc_AxeUse;
 			};
 		};
-/* 		if(playerSide == civilian && life_inv_shovel > 0) then {
-			 if(([false,"shovel",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
-			 [true,"shovel",1] call life_fnc_handleInv;
-			 [] spawn life_fnc_shovelUse;
-			 };
-		};
-		if(playerSide == civilian && life_inv_pickaxet > 0) then {
-			if(([false,"pickaxet",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
-			[true,"pickaxet",1] call life_fnc_handleInv;
-			[] spawn life_fnc_pickAxetUse;
-			};
-		};
-		if(playerSide == civilian && life_inv_axet > 0) then {
-			if(([false,"axet",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
-			[true,"axet",1] call life_fnc_handleInv;
-			[] spawn life_fnc_AxetUse;
-			};
-		};
-		if(playerSide == civilian && life_inv_shovelt > 0) then {
-			 if(([false,"shovelt",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
-			 [true,"shovelt",1] call life_fnc_handleInv;
-			 [] spawn life_fnc_shoveltUse;
-			 }; 
-		};*/
 	};		
 };
 
