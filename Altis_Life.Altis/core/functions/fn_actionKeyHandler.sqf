@@ -7,12 +7,14 @@
 	Master action key handler, handles requests for picking up various items and
 	interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
 */
-private["_curTarget","_isWater","_random"];
+private["_curTarget","_isWater","_random","_random2","_random3"];
 _curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
-_random = random 1000;
+_random2 = random 3500;
+_random3 = random 3500;
+_random = _random2 + _random3;
 if(isNull _curTarget) exitWith {
 	if(_isWater) then {
 		private["_fish"];
@@ -21,14 +23,14 @@ if(isNull _curTarget) exitWith {
 			[_fish] call life_fnc_catchFish;
 		};
 	} else {
-		if(playerSide == civilian && _random >= 800) then {
-			[] call life_fnc_gather3;
+		if(playerSide == civilian && _random >= 200) then {
+			[] call life_fnc_gather;
 		};
-		if(playerSide == civilian && _random =(>= 700 && <=799 ) then {
+		if(playerSide == civilian && _random >= 11 && _random <=199) then {
 			[] call life_fnc_gather2;
 		};
-		if(playerSide == civilian && _random <= 699 then {
-			[] call life_fnc_gather;
+		if(playerSide == civilian && _random <= 10) then {
+			[] call life_fnc_gather3;
 		};
 		if(playerSide == civilian && life_inv_pickaxe > 0) then {
 			if(([false,"pickaxe",1] call life_fnc_handleInv)&&(!life_action_inUse)) then {
@@ -42,6 +44,7 @@ if(isNull _curTarget) exitWith {
 			[] spawn life_fnc_AxeUse;
 			};
 		};
+
 	};		
 };
 
@@ -73,6 +76,9 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
+	};
+	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == civilian) then {
+		[_curTarget] call life_fnc_civInteractionMenu;
 	};
 } else {
 	//OK, it wasn't a player so what is it?
